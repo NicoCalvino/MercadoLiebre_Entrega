@@ -1,0 +1,41 @@
+main h3 {
+    margin:10px
+}
+
+
+main div .info-usuario{
+    font-size:16px;
+    border-radius:5px;
+    border:none;
+    margin:20px 0px;
+    padding:10px;
+    width:100%
+}
+
+main .perfil-usuario{
+    display:flex;
+    justify-content: space-around;
+}
+
+main .intereses-usuario{
+    margin:15px
+}
+
+.boton{
+    display:block;
+    color:white;
+    margin:10px 0px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background-color:#1259c3 ;
+    width:100%
+}
+
+.boton:hover{
+    background-color:#0022AA 
+}
+
+main div span{
+    display:none
+}

@@ -1,0 +1,281 @@
+/*Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+/*Estilos generales de todo el body*/
+
+*{
+    margin: 0px;
+    padding: 0px;   
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto';
+    background-color: #ebebeb
+}
+
+p{
+    font-size:12px
+}
+
+/*Estilos generales de todo el header*/
+header{
+    background-color: #EAC926;
+}
+
+header .main-head{
+    display:flex
+}
+
+header .logo{
+    width:50%;
+    padding:30px
+}
+
+header .input{
+    width:50%;
+    margin:auto
+}
+
+header .input input{
+    width:90%;
+    border-radius: 5px;
+    height:30px
+}
+
+.second-head{
+    text-align: center;
+    font-size: 16px;
+}
+
+/*Estilos de las listas del header*/
+header nav {
+    display:none;
+}
+
+.banner{
+    width:100%
+}
+
+/*Estilos para sacar estilos a los vinculo*/
+a{
+    color:black;
+    text-decoration: none;
+}
+
+/*Estilos del burger menu*/
+.burger-menu{
+    color:white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.fa-bars{
+    background-color:#1259c3;
+    padding:15px;
+    border-radius:15%
+}
+
+/*Estilos generales del main*/
+main{
+    width:90%;
+    margin:auto;
+}
+
+main section h3 {
+    color:rgb(120, 120, 120)
+}
+
+/*Estilos de las secciones del main*/
+
+main section  article{
+    margin-bottom: 10px;
+}
+
+main section article img{
+    margin:auto;
+    width:100%;
+}
+
+main section article div{
+    background-color: white;
+    width:100%;
+    margin:auto;
+    border-top: 1px solid #ebebeb;
+    padding:15px;
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }
+   
+
+/*Estilos de los diferentes puntos de cada producto*/
+main section h3{
+    font-size:24px;
+    margin-top:20px
+}
+
+.fa-truck{
+    color:#39b54a;
+    font-size:14px;
+    transition: all 450ms
+}
+
+.prod-precios{
+    font-size:18px;
+    margin:0px;
+    margin-right: 5px;
+    /*width:30%;*/
+}
+
+.prod-dctos{
+    font-size:16px;
+    color:#39b54a;
+    margin:0px;
+    /*width:70%;*/
+}
+
+.prod-descript{
+    display:none;
+    font-size:16px;
+    margin-top:30px;
+    font-weight: normal ;
+}
+
+/*Estilos del footer*/
+
+footer{
+    width:100%;
+    background-color: white;
+}
+
+footer ul li{
+    text-align: center;
+    color:#666;
+    width:80%;
+    margin:auto
+}
+
+footer ul li p, h3{
+    margin:0px
+}
+.estilo-iconos{
+    color:#1259c3;
+    font-size: 2em;
+    margin: 50px;
+    margin-bottom: 10px;
+}
+
+#copyright{
+    margin: 20px 0px
+}
+
+/*Media Queries*/
+
+@media(min-width:481px){
+    header{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    header .main-head{
+        width:70%;
+    }
+    
+    .second-head{
+        width:30%;
+        margin:auto
+    }
+    
+    header nav {
+        display:flex;
+        justify-content: space-around;
+        width:100%
+    }
+
+    header nav ul{
+        list-style-type: none;   
+    }
+
+    header nav .nav-bar, .log-bar{
+        display:flex;
+        justify-content:space-around;
+        width:45%
+    }
+
+    header nav ul li{
+        margin:8px
+    }
+
+    .burger-menu{
+        display:none;
+    }
+    
+    .articulo-venta:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    .articulo-venta:hover .prod-descript{
+        display:block;
+        width:100%;
+    }
+
+    .articulo-venta:hover .fa-truck{
+        transform: rotate(-90deg);
+    }
+
+    main section .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items:flex-start;
+    }
+    
+    main section div article{
+        width:45%;
+    }
+
+
+}
+
+@media(min-width:769px){
+    main section div article{
+        width:22%
+    }
+
+    /*Estilos del footer*/
+
+    footer ul{
+        display:flex;
+        justify-content: space-around;
+    }
+
+    footer ul li{
+        padding:10px 100px
+    }
+
+    .estilo-iconos:hover{
+        color:#5689d6;
+    }
+}
